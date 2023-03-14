@@ -385,7 +385,7 @@ PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
 # RRO
-PRODUCT_ENFORCE_RRO_TARGETS := \
+#PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
 # Seccomp

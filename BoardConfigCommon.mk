@@ -96,7 +96,7 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
 # CMHW
 #BOARD_USES_CYANOGEN_HARDWARE := true
-JAVA_SOURCE_OVERLAYS += \
+# JAVA_SOURCE_OVERLAYS += \
 	org.lineageos.hardware|hardware/samsung/lineagehw|**/*.java \
 	org.lineageos.hardware|$(LOCAL_PATH)/lineagehw|**/*.java
 
@@ -151,7 +151,7 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8916
 
 # Kernel
 BOARD_KERNEL_CMDLINE += \
-	console=null \
+	console=tty0 \
 	androidboot.hardware=qcom \
 	user_debug=23 \
 	msm_rtb.filter=0x3F \
